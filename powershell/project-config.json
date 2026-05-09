@@ -1,0 +1,11 @@
+﻿{
+    "scripts":  "sales-etl-scripts-7780",
+    "athena":  "sales-etl-athena-7780",
+    "processed":  "sales-etl-processed-7780",
+    "raw":  "sales-etl-raw-7780",
+    "region":  "us-east-1",
+    "glue_db":  "sales_db",
+    "role":  "arn:aws:iam::080777914113:role/GlueSalesETLRole",
+    "log_group":  "/aws-glue/jobs/sales-etl",
+    "account":  "080777914113"
+}

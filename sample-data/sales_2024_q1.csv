@@ -1,0 +1,31 @@
+order_id,customer_id,customer_name,product_id,product_name,category,quantity,unit_price,discount_pct,order_date,region,salesperson,status
+ORD-001,CUST-101,Ahmed Hassan,PROD-201,Laptop Pro 15,Electronics,2,1299.99,10,2024-01-05,Middle East,Sara Khalil,completed
+ORD-002,CUST-102,Fatima Al-Zahra,PROD-202,Office Chair,Furniture,1,349.00,0,2024-01-06,Middle East,Omar Nasser,completed
+ORD-003,CUST-103,Mohamed Ibrahim,PROD-203,USB-C Hub,Electronics,5,49.99,5,2024-01-08,Africa,Layla Samir,completed
+ORD-004,CUST-101,Ahmed Hassan,PROD-204,Monitor 27inch,Electronics,1,599.00,15,2024-01-10,Middle East,Sara Khalil,completed
+ORD-005,CUST-104,Nour Saleh,PROD-205,Standing Desk,Furniture,1,899.00,0,2024-01-12,Europe,Ali Hassan,pending
+ORD-006,CUST-105,Yasmin Farouk,PROD-201,Laptop Pro 15,Electronics,1,1299.99,0,2024-01-15,Europe,Ali Hassan,completed
+ORD-007,CUST-106,Karim Mahmoud,PROD-206,Wireless Mouse,Electronics,3,79.99,10,2024-01-18,Middle East,Sara Khalil,completed
+ORD-008,CUST-107,Rania Abbas,PROD-207,Notebook A4 Pack,Stationery,10,12.50,0,2024-01-20,Africa,Layla Samir,completed
+ORD-009,CUST-102,Fatima Al-Zahra,PROD-208,Desk Lamp LED,Electronics,2,89.99,5,2024-01-22,Middle East,Omar Nasser,refunded
+ORD-010,CUST-108,Sami Taha,PROD-203,USB-C Hub,Electronics,8,49.99,20,2024-01-25,Asia,Hana Lee,completed
+ORD-011,CUST-109,Dina Ezzat,PROD-209,Ergonomic Keyboard,Electronics,1,149.99,0,2024-02-01,Middle East,Sara Khalil,completed
+ORD-012,CUST-110,Tarek Barakat,PROD-210,Webcam HD,Electronics,2,129.99,10,2024-02-03,Africa,Layla Samir,completed
+ORD-013,CUST-111,Mona Fathy,PROD-205,Standing Desk,Furniture,2,899.00,5,2024-02-07,Europe,Ali Hassan,completed
+ORD-014,CUST-112,Hossam Ali,PROD-201,Laptop Pro 15,Electronics,3,1299.99,15,2024-02-10,Asia,Hana Lee,completed
+ORD-015,CUST-113,Amira Sameh,PROD-206,Wireless Mouse,Electronics,1,79.99,0,2024-02-12,Middle East,Omar Nasser,completed
+ORD-016,CUST-114,Walid Nour,PROD-211,Printer Laser,Electronics,1,449.00,0,2024-02-15,Africa,Layla Samir,pending
+ORD-017,CUST-115,Salma Hassan,PROD-202,Office Chair,Furniture,4,349.00,10,2024-02-18,Europe,Ali Hassan,completed
+ORD-018,CUST-101,Ahmed Hassan,PROD-209,Ergonomic Keyboard,Electronics,2,149.99,5,2024-02-20,Middle East,Sara Khalil,completed
+ORD-019,CUST-116,Khaled Saad,PROD-212,Headphones Pro,Electronics,1,299.99,0,2024-02-22,Asia,Hana Lee,completed
+ORD-020,CUST-117,Rana Mostafa,PROD-207,Notebook A4 Pack,Stationery,20,12.50,10,2024-02-25,Middle East,Omar Nasser,completed
+ORD-021,CUST-118,Adel Fouad,PROD-201,Laptop Pro 15,Electronics,1,1299.99,0,2024-03-01,Africa,Layla Samir,completed
+ORD-022,CUST-119,Noha Kamel,PROD-210,Webcam HD,Electronics,3,129.99,15,2024-03-04,Europe,Ali Hassan,completed
+ORD-023,CUST-120,Sherif Aziz,PROD-204,Monitor 27inch,Electronics,2,599.00,10,2024-03-07,Middle East,Sara Khalil,completed
+ORD-024,CUST-104,Nour Saleh,PROD-208,Desk Lamp LED,Electronics,1,89.99,0,2024-03-10,Europe,Ali Hassan,completed
+ORD-025,CUST-121,Mariam Tarek,PROD-212,Headphones Pro,Electronics,2,299.99,5,2024-03-12,Asia,Hana Lee,completed
+ORD-026,CUST-122,Bassem Rizk,PROD-205,Standing Desk,Furniture,1,899.00,0,2024-03-15,Middle East,Omar Nasser,completed
+ORD-027,CUST-123,Heba Zaki,PROD-211,Printer Laser,Electronics,2,449.00,20,2024-03-18,Africa,Layla Samir,completed
+ORD-028,CUST-124,Omar Magdy,PROD-206,Wireless Mouse,Electronics,6,79.99,10,2024-03-20,Asia,Hana Lee,completed
+ORD-029,CUST-125,Menna Youssef,PROD-202,Office Chair,Furniture,3,349.00,0,2024-03-22,Europe,Ali Hassan,completed
+ORD-030,CUST-126,Amir Soliman,PROD-203,USB-C Hub,Electronics,4,49.99,5,2024-03-25,Middle East,Sara Khalil,completed
