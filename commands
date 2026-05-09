@@ -1,0 +1,71 @@
+AWS Glue Sales ETL — Important Commands Cheat Sheet
+🔹 AWS Configure
+aws configure
+
+🪣 S3 Commands
+List all buckets
+aws s3 ls
+List bucket files
+aws s3 ls s3://BUCKET_NAME --recursive
+Upload file
+aws s3 cp sales_2024_q1.csv s3://BUCKET_NAME/
+Delete all bucket contents + bucket
+aws s3 rb s3://BUCKET_NAME --force
+Check object versions
+aws s3api list-object-versions --bucket BUCKET_NAME
+Delete specific object version
+aws s3api delete-object `  --bucket BUCKET_NAME `  --key "FILE_PATH" `  --version-id VERSION_ID
+
+🔹 Glue Commands
+List Glue jobs
+aws glue list-jobs
+List crawlers
+aws glue list-crawlers
+List databases
+aws glue get-databases
+Get tables
+aws glue get-tables --database-name sales_db
+Get job runs
+aws glue get-job-runs `  --job-name sales_etl_job `  --region us-east-1
+Delete Glue job
+aws glue delete-job --job-name sales_etl_job
+Delete crawler
+aws glue delete-crawler --name sales_raw_crawler
+Delete database
+aws glue delete-database --name sales_db
+
+📊 Athena Commands
+Start Athena query
+aws athena start-query-execution `  --query-string "SELECT * FROM sales LIMIT 10;" `  --query-execution-context Database=sales_db `  --result-configuration OutputLocation=s3://ATHENA_BUCKET/results/ `  --region us-east-1
+Get Athena query results
+aws athena get-query-results `  --query-execution-id QUERY_ID `  --region us-east-1 `  --query "ResultSet.Rows[*].Data[*].VarCharValue" `  --output text
+List Athena workgroups
+aws athena list-work-groups
+Delete Athena workgroup
+aws athena delete-work-group `  --work-group WORKGROUP_NAME `  --recursive-delete-option
+
+📜 CloudWatch Logs
+List log groups
+aws logs describe-log-groups
+Show only log group names
+aws logs describe-log-groups `  --query "logGroups[].logGroupName" `  --output text
+Delete log group
+aws logs delete-log-group `  --log-group-name "/aws-glue/jobs/error"
+
+🔐 IAM Commands
+List IAM roles
+aws iam list-roles
+Delete IAM role
+aws iam delete-role --role-name ROLE_NAME
+Detach policy from role
+aws iam detach-role-policy `  --role-name ROLE_NAME `  --policy-arn POLICY_ARN
+
+🧹 Cleanup Verification
+Verify S3 is empty
+aws s3 ls
+Verify Glue clean
+aws glue list-jobsaws glue list-crawlersaws glue get-databases
+Verify CloudWatch clean
+aws logs describe-log-groups
+Verify Athena clean
+aws athena list-work-groups
