@@ -1,0 +1,6 @@
+{
+  "--raw_bucket": "sales-etl-raw-7780",
+  "--processed_bucket": "sales-etl-processed-7780",
+  "--database_name": "sales_db",
+  "--table_name": "sales"
+}
