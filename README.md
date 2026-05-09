@@ -145,18 +145,9 @@ aws-glue-sales-etl/
 - Run the processed data crawler first (`03b` step in `05_setup_athena_and_query.ps1`)
 - Check the database name is correct in query context
 
-**Free tier concern:**
-- Glue charges by DPU-second. G.1X with 2 workers = 2 DPUs
-- Each ETL run ≈ 5 min = 0.17 DPU-hours (well within 40/month)
-- Crawlers cost separately — run minimally during practice
 
----
+👨‍💻 Author
 
-## Next Steps to Advance This Project
+Abdelatif Mohamed
+Cloud & DevOps Engineer
 
-1. **Add incremental processing** — upload a Q2 CSV, rerun; bookmarks skip Q1
-2. **Add schema evolution** — add a new column to CSV, see crawler detect it
-3. **Add SNS alerts** — notify on job failure via CloudWatch alarm → SNS
-4. **Add Glue DataBrew** — visual data profiling on the raw CSV
-5. **Connect to QuickSight** — Athena as QuickSight data source for dashboards
-6. **Terraform/CDK** — replace PowerShell with infrastructure-as-code
